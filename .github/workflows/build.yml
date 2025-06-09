@@ -1,10 +1,9 @@
 name: build
-
 on:
   push:
     branches:
       - master
-
+  workflow_dispatch:  # 添加这行来支持手动触发
 jobs:
   build:
     runs-on: ubuntu-latest
